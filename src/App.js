@@ -1,7 +1,14 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { analytics } from './firebase';
 
 function App() {
+  
+  React.useEffect(() => {
+    analytics.logEvent("Page loaded")
+  }, [])
+  
   return (
     <div className="App">
       <header className="App-header">
