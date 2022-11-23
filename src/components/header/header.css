@@ -1,0 +1,20 @@
+.logo {
+    max-width: 110px;
+}
+
+.main-header-container {
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+}
+
+.link {
+    margin: 10px !important;
+    color: #000 !important;
+    text-transform: uppercase;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}

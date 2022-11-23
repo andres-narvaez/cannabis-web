@@ -1,0 +1,10 @@
+.main-footer-container {
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 40px;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
