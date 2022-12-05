@@ -76,9 +76,32 @@
     box-sizing: border-box;
 }
 
+.subtitle {
+    background: rgb(39,153,164);
+    background: linear-gradient(133deg, rgba(39,153,164,1) 0%, rgba(194,37,151,1) 29%, rgba(158,37,179,1) 74%, rgba(0,212,255,1) 100%);
+    display: block;
+    width: 100%;
+    padding: 30px 0;
+    color: #fff;
+}
+
 .container-text-stats {
     background-image: url("../../../public/banner-home-3.jpg");
     background-size: cover;
     padding: 80px 40px;
     margin-bottom: 40px !important;
+}
+
+.info-container {
+    width: 100%;
+}
+
+.text-video-dos {
+    display: block;
+    padding: 30px;
+    border: solid thin #cfcfcf;
+    border-left: solid 10px #b0cd8d;
+    margin: 0 0 30px 30px !important;
+    max-width: 450px;
+    box-sizing: border-box;
 }

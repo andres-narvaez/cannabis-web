@@ -1,5 +1,6 @@
 import './home.css'
-import { Grid, Typography } from '@mui/material'
+import { Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
+import RequestQuoteIcon from '@mui/icons-material/RequestQuote'
 import { PieChart } from 'react-minimal-pie-chart'
 import CountryName from '../../components/countryName/countryName'
 import ReactPlayer from 'react-player'
@@ -75,6 +76,59 @@ function HomePage() {
          <Typography className='text-video'>
             Tras muchos años de investigación acerca del cannabis, se han desarrollado innumerables estudios y proyectos donde se han demostrado  y se siguen demostrando un sinfín de propiedades de la planta, sobre todo a nivel medicinal, científico y terapéutico.
          </Typography>     
+      </Grid>
+      <Grid container className='info-container'>
+         <Typography variant='h2' className='subtitle'>
+            Los negocios (legales) más rentables de la industria del cannabis
+         </Typography>
+         <Grid container className='video-container'>
+         <ReactPlayer url='https://youtu.be/9mZ3UihuvE4' />
+         <Grid className='text-video-dos'>
+            <Typography>
+               Con la aprobación y legalización del uso del cannabis en muchos países, ya sea de forma medicinal o para consumo recreativo, han proliferado las oportunidades de negocio en esta industria que se abre sitio entre nuestros comercios a pasos agigantados.
+            </Typography> 
+            <List>
+               <ListItem>
+                  <ListItemIcon>
+                     <RequestQuoteIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="Productos Cosméticos" />
+               </ListItem>
+               <ListItem>
+                  <ListItemIcon>
+                     <RequestQuoteIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="Productos Alimentarios" />
+               </ListItem>
+               <ListItem>
+                  <ListItemIcon>
+                     <RequestQuoteIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="Flores Ornamentales" />
+               </ListItem>
+               <ListItem>
+                  <ListItemIcon>
+                     <RequestQuoteIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="Bancos de semillas" />
+               </ListItem>
+               <ListItem>
+                  <ListItemIcon>
+                     <RequestQuoteIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="Organización de eventos" />
+               </ListItem>
+               <ListItem>
+                  <ListItemIcon>
+                     <RequestQuoteIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="Consultoria especializada" />
+               </ListItem>
+            </List>
+         </Grid>
+             
+         </Grid>
+         
       </Grid>
    </Grid> 
 }
