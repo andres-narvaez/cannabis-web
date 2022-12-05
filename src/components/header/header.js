@@ -22,7 +22,7 @@ function Header() {
                     navigate('/usos-cannabis')
                 }}>Uso del cannabis</Link>
                 <Link className='link' underline="hover" onClick={() => {
-                    navigate('/test')
+                    navigate('/')
                 }}>Industria del cannabis</Link>
             </Box>
         </div>)

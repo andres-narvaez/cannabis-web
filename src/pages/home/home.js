@@ -2,6 +2,7 @@ import './home.css'
 import { Grid, Typography } from '@mui/material'
 import { PieChart } from 'react-minimal-pie-chart'
 import CountryName from '../../components/countryName/countryName'
+import ReactPlayer from 'react-player'
 
 const countries = [
    {
@@ -28,14 +29,18 @@ const countries = [
 
 function HomePage() {
    return <Grid container>
-      <img  className='main-banner' src='/banner-home.jpg' alt='banner cannabis' />
+      <Grid container className='container-main-banner'>
+         <Typography className='texto-banner'>
+            El cannabis <strong>una industria</strong> de crecimiento exponencial.
+         </Typography>
+      </Grid>
       <Grid container justifyContent={'center'} className='contenido-wrapper'>
          <Typography className='texto-principal'>
             El mercado de cannabis mueve en el mundo un promedio de <strong>US$150.000 millones anuales</strong> y los expertos creen que habrá crecimiento
          </Typography>
       </Grid>
       <Grid container justifyContent={'center'} className='countries-stats-container'>
-         <Grid item>
+         <Grid item className='container-text-stats'>
             <Typography className='text-stats'>
                De acuerdo con las estimaciones de New Frontier Data, en su reporte Global Cannabis Report: 2020 Industry Outlook, se estima que el mercado global de cannabis, considerando tanto el regulado como el ilícito, tiene un valor de unos US$$344.000 millones. En el informe también se identificó que los cinco principales mercados regionales son Asia, con US$132.900 millones; Norteamérica, con US$85.600 millones; Europa, con US$ 68.500 millones; África, que asciende hasta US$37.300 millones y América Latina, con US$9.800 millones.
             </Typography>
@@ -60,10 +65,16 @@ function HomePage() {
             />
          </Grid>
       </Grid>
-      <Grid>
-      <Typography className='texto-banner'>
+      <Grid container className='container-texto-banner'>
+         <Typography className='texto-banner'>
             El cannabis <strong>una industria</strong> de crecimiento exponencial.
          </Typography>
+      </Grid>
+      <Grid container className='video-container'>
+         <ReactPlayer url='https://youtu.be/vn0_kM0jVyk' />
+         <Typography className='text-video'>
+            Tras muchos años de investigación acerca del cannabis, se han desarrollado innumerables estudios y proyectos donde se han demostrado  y se siguen demostrando un sinfín de propiedades de la planta, sobre todo a nivel medicinal, científico y terapéutico.
+         </Typography>     
       </Grid>
    </Grid> 
 }
