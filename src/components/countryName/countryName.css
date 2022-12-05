@@ -1,0 +1,14 @@
+.square {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.country-container {
+    margin: 10px 0;
+}
+
+.country-label {
+    align-self: center;
+    padding: 0 10px;
+}

@@ -1,3 +1,26 @@
 .main-banner {
     max-width: 100%;
 }
+
+.texto-principal {
+    font-size: 60px !important;
+    line-height: 1 !important;
+    text-align: left;
+    padding: 80px 20px;
+    display: block;
+    border-left: 8px solid rgb(11, 177, 99);
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+.contenido-wrapper {
+    margin: 50px 10px;
+}
+
+.pie-container {
+    max-width: 300px;
+}
+
+.countries-text-container {
+
+}
