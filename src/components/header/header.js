@@ -1,10 +1,13 @@
 import logo from '../../logo-color.svg'
 import './header.css'
 import {Box, Link} from '@mui/material'
+import { useNavigate } from 'react-router-dom'
 
 const preventDefault = (event) => event.preventDefault()
 
 function Header() {
+    const navigate = useNavigate()
+
     return (
         <div className='main-header-container'>
             <img src={logo} className="logo" alt="logo" />
@@ -12,9 +15,15 @@ function Header() {
                 onClick={preventDefault}
                 className='menu'
             >
-                <Link className='link' underline="hover" href="/">Inicio</Link>
-                <Link className='link' underline="hover" href="/">Uso del cannabis</Link>
-                <Link className='link' underline="hover" href="/">Industria del cannabis</Link>
+                <Link className='link' underline="hover" onClick={() => {
+                    navigate('/')
+                }}>Inicio</Link>
+                <Link className='link' underline="hover" onClick={() => {
+                    navigate('/usos-cannabis')
+                }}>Uso del cannabis</Link>
+                <Link className='link' underline="hover" onClick={() => {
+                    navigate('/test')
+                }}>Industria del cannabis</Link>
             </Box>
         </div>)
 }

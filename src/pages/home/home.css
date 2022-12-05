@@ -21,6 +21,15 @@
     max-width: 300px;
 }
 
-.countries-text-container {
+.countries-stats-container {
+    padding: 50px;
+}
 
+.text-stats {
+    padding-bottom: 30px;
+}
+
+.texto-banner {
+    background-image: url("../../../public/banner-home-2.jpg");
+    display: block;
 }
